@@ -48,3 +48,5 @@ The default plots 7,171 points that are all 0 or 1, so they overplot into two st
 Script: `scripts/04_second_language.py`. Figure: `figures/literacy_by_age_python.svg`. Tables: `figures/band_table_R.csv` and `figures/band_table_python.csv`.
 
 Women aged 15-19: 28.0% in R and 28.0% in Python.
+
+One default that differed was gridlines: ggplot’s minimal theme draws light grid lines, while matplotlib draws none. To make the figures match, I set the Python y-axis to 0-100, the x-axis to 10-70, put ticks at the band midpoints, and removed the top and right borders. The band tables agree to one decimal; women aged 15-19 are 28.0% in both.
