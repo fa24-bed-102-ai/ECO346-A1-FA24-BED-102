@@ -1,4 +1,4 @@
-# ECO346 Assignment 1: FA24-BEDS-102
+# ECO346 Assignment 1: FA24-BED-102
 
 **Variant 2: Sindh, rural** (prov_code = 3, urban_rural = 1).
 Data: PSLM 2019-20 person file, weighted by hhweight.
@@ -35,6 +35,11 @@ Women aged 15-19: 28.0%. Men aged 15-19: 59.5%. Women aged 55-59: 9.6%. Men aged
 Interpretation: In rural Sindh, women are less literate than men in every age band. The gap peaks at ages 30-34, at 42.5 points. Younger women are more literate than older women, which suggests schooling has expanded across cohorts, yet young women still trail young men by about 30 points. This is a single cross-section, so it compares different cohorts and does not follow anyone over time. It cannot tell us whether any person's literacy changes with age, or why girls are less schooled.
 
 ## Makeover (Q4)
+**Default figure:**
+![Default figure](figures/default.svg)
+
+**Redesign (Figure 2):**
+![Redesign](figures/literacy_by_age.svg)
 Default figure: `figures/default.svg`. Redesign: Figure 2.
 
 The default plots 7,171 points that are all 0 or 1, so they overplot into two stripes and show no pattern. I made three changes. First, I plotted conditional means (weighted literacy rate by age band), so the rate is read by position on a common scale, the most accurate perceptual channel. Second, I split women and men into two coloured series with direct labels instead of a legend, which saves ink and eye movement. Third, I removed background and clutter (data-ink) and added a finding title and a caption with source, sample and weighting. The default shows every single year of age and the raw 0/1 values; my redesign hides within-band variation and the number of people behind each point.
